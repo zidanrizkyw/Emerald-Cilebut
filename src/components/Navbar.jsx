@@ -4,6 +4,7 @@ import { assets } from '../assets/assets'
 
 const Navbar = () => {
   const [showMobileMenu, setshowMobileMenu] = useState(false)
+  const code = `+62`
 
   useEffect(() => {
     if (showMobileMenu) {
@@ -29,7 +30,7 @@ const Navbar = () => {
           <a href='#Testimonials' className='cursor-pointer hover:text-gray-400'>Testimonials</a>
         </ul>
         <a
-          href="https://wa.me/085600945038"
+          href="https://wa.me/6285600945038"
           target="_blank"
           rel="noopener noreferrer"
           className="hidden lg:flex space-x-2 bg-green-700 px-8 py-2 rounded-full text-white"
@@ -53,7 +54,7 @@ const Navbar = () => {
           <a onClick={() => setshowMobileMenu(false)} href='#Cluster' className='px-4 py-2 rounded-full inline-block'>Cluster</a>
           <a onClick={() => setshowMobileMenu(false)} href='#Testimonials' className='px-4 py-2 rounded-full inline-block'>Testimonials</a>
           <a
-          href="https://wa.me/085600945038"
+          href={`https://wa.me/${code}85600945038`}
           target="_blank"
           rel="noopener noreferrer"
           className="flex space-x-2 bg-green-700 px-8 py-2 rounded-full text-white"
